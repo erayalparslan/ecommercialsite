@@ -1,0 +1,237 @@
+body{
+                    background-color: #DCDCDC;
+            }
+
+            #header , #content , #footer{
+                    margin: 0 auto;
+                    width: 60%;
+                    border: 1px solid #778899;
+                    margin-top: 20px;
+                    background-color: #F0F8FF;
+                    border-radius: 10px;
+            }
+            #header {
+                    height: 49px;
+                    background-color: orange;
+            }
+
+            #content {
+                    height: 740px;
+            }
+
+            #footer {
+                    height: 70px;
+                    background-color: #f5f5f5;
+            }
+
+            #footer p {
+                margin: 10px;
+                font-family: Courier;
+                color: orange;
+                font-weight: bold;
+            }
+
+            #ctislogo {
+                height: 66px;
+                width: 66px;
+                align-self: right;
+                margin-right: 1px;
+                border-radius: 10px;
+            }
+            
+            #searchButton {
+                background: orange;
+                height: 25px;
+                width: 40px;
+                font-weight: bold;
+                padding-top: 2px;
+            }
+            
+            #statusbar {
+                margin-left: 10px;
+                font-style: italic;
+            }
+            #searchbox {
+                text-align: center;
+                margin-top: 15px;
+            }
+            
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            li {
+                float: right;
+            }   
+
+            li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 15px 26px;
+                text-decoration: none;
+                font-weight: bold;
+
+            }
+            #shoppingcard, #logout, #newproduct {
+                display: block;
+                padding-top: 13px;
+                padding-bottom: 5px;
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+            #shoppingcard img, #logout img, #newproduct img {
+                height: 27px;
+                width: 30px;
+            }
+            #shoppingcard:hover, #newproduct:hover {
+                background-color: #00FF00;
+            }
+
+            #logout:hover {
+                background-color: red;
+            }
+            li a:hover { 
+                background-color: #F0F8FF;
+                color: orange;
+                border-radius: 7px;
+            }
+            #miniSlider .regtangle:after {
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-right: 7px solid transparent;
+                border-left: 7px solid transparent;
+                bottom: -7px; 
+            }
+            #miniSlider .regtangle p {
+                padding: 0% 2%;
+                margin: 0;
+                display: inline-block;
+                color: black;
+                font-family: fantasy;
+                font-weight: bold;
+            }
+            #miniSlider .carousel_posts {
+                margin: 10px 0 10px 0;
+                position: relative;
+                
+            }
+            #miniSlider .carousel_posts .regtangle {
+                padding: 1.1% 1%;
+                background: #f2ab39;
+                position: relative;
+                margin-bottom: 3.5%; 
+            }
+            #miniSlider .carousel_posts .regtangle p {
+                letter-spacing: 1px;
+                font-size: 15px; 
+            }
+            #miniSlider .carousel_posts .regtangle .regtangle:after {
+                content: "";
+                border-top: 7px solid #484848;
+                left: 3%; 
+            }
+            #miniSlider .carousel_posts .controller {
+                float: right;
+                margin-right: 3.5%; 
+            }
+            #miniSlider .carousel_posts .controller .controll {
+                height: 15px;
+                width: 15px;
+                border: 1px solid black;
+                border-radius: 100%;
+                display: inline-block;
+                padding: 0;
+                margin: 2px 3px; 
+            }
+            #miniSlider .carousel_posts .controller .active {
+                background: black; 
+            }
+            #miniSlider .carousel_posts .carousel_main {
+                padding: 0;
+                margin: -15px;
+                padding: 0px;
+                position: relative;
+                transition: all 1s;
+                overflow: hidden;
+                height: 90%;
+                width: 90%;
+                margin-left: 50px;
+            }
+            #miniSlider .carousel_posts .carousel_main .over {
+                overflow: hidden;
+                position: relative; 
+            }
+            #miniSlider .carousel_posts .carousel_main .over .right {
+                position: absolute;
+                right: 5%;
+                top: 30%;
+                opacity: 0.8;
+                padding: 2%;
+                z-index: 1;
+                visibility: hidden;
+                cursor: pointer;
+                color: white; 
+            }
+            #miniSlider .carousel_posts .carousel_main .over .right .fa-chevron-right {
+                visibility: hidden; 
+            }
+            #miniSlider .carousel_posts .carousel_main .over .left {
+                position: absolute;
+                left: 5%;
+                top: 30%;
+                opacity: 0.8;
+                padding: 2%;
+                z-index: 1;
+                visibility: hidden;
+                cursor: pointer;
+                color: white; 
+            }
+            #miniSlider .carousel_posts .carousel_main .over .left .fa-chevron-left {
+                visibility: hidden; 
+            }
+            #miniSlider .carousel_posts .carousel_main .carousel_move {
+                transition: all 1s;
+                padding: 0;
+                margin: 0px;
+            }
+            #miniSlider .carousel_posts .carousel_main .carousel_move .promoted_item {
+                float: left;
+                padding: 0;
+                background: gray;
+                overflow: hidden;
+                position: relative; 
+            }
+            #miniSlider .carousel_posts .carousel_main .carousel_move .promoted_item a {
+                position: absolute;
+                width: 100%;
+                height: 100%; 
+            }
+            #miniSlider .carousel_posts .carousel_main .carousel_move .promoted_item a img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;  
+                -webkit-transition: all 0.5s ease-in-out; 
+            }
+            #miniSlider .carousel_posts .carousel_main .carousel_move .promoted_item a img:hover {
+                -webkit-transform: scale(1.2); 
+            }
+            #productdiv{
+                position: relative;
+            }
+
+            #headernames td {
+                background-color: orange; 
+                font-weight: bold;
+            }
+            #productImage {
+                width: 20px;
+            }
+            #imageIcon img{
+                height: 100%;
+                width: 100%;
+            }
