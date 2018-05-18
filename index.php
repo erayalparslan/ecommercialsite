@@ -40,7 +40,7 @@
 
 	if(isset($_GET["searchvalue"])){
 		$searchString = $_GET["searchvalue"];
-		$sql = "select * from product LIMIT $offset, $no_of_records_per_page WHERE title LIKE '%". htmlspecialchars($searchString) ."%'";
+		$sql = "select * from product WHERE title LIKE '%". htmlspecialchars($searchString) ."%'";
 		$stmt = $db->query($sql) ;
 		$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	}
